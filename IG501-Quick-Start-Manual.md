@@ -27,6 +27,7 @@ This document is used to explain the basic configuration operations of InGateway
      ![](images/2020-01-02-09-55-52.png)  
 
   - Method 2: Set a fixed IP address   
+  
      Select Use the following IP address, enter an IP address (By default,any from 192.168.1.2 to 192.168.1.254), subnet mask (By default,255.255.255.0), default gateway (By default,192.168.1.1), and DNS server address, and click OK.   
 
     ![](images/2020-01-21-15-57-32.png)  
@@ -67,12 +68,14 @@ This document is used to explain the basic configuration operations of InGateway
 ## 2. Update the Software
 To obtain the latest software version of IG501 and updated functions, contact the customer service center. To update the IG501 software version, do as follows:  
 - Update the IG501 firmware.   
+  
   Choose System > Firmware Upgrade. Select a firmware file and click Start Upgrading. After the update is completed, you are prompted to restart the system to Apply the new firmware.  
 
   ![](images/2020-01-21-14-20-39.png)  
    
 - Upgrade the Python SDK of IG501.   
-Choose Edge Computing > Python Edge Computing. Select Python Engine, select an Python SDK file, and click Upgrade; when the upgrade confirmation window pops up, click Confirm. Then the IG501 automatically performs the upgrade.  
+  
+  Choose Edge Computing > Python Edge Computing. Select Python Engine, select an Python SDK file, and click Upgrade; when the upgrade confirmation window pops up, click Confirm. Then the IG501 automatically performs the upgrade.  
 
   ![](images/2020-02-12-14-09-43.png)  
 
@@ -85,6 +88,7 @@ Choose Edge Computing > Python Edge Computing. Select Python Engine, select an P
 ### 3.1 Install and run Python App
 To install and run Python App (App for short) in IG501,  please refer to the following process:  
 - Step 1: Install the App  
+  
   Before installing the App, you need to ensure that the Python Edge Computing Engine is enabled and the Python SDK is installed, as shown in the following figure:  
 
   ![](images/2020-02-12-14-41-48.png)  
@@ -98,6 +102,7 @@ To install and run Python App (App for short) in IG501,  please refer to the fol
   ![](images/2020-02-12-14-53-53.png)   
    
 - Step 2: Run the App   
+  
   Select enable App and click Submit.  
 
   ![](images/2020-02-12-14-56-05.png)  
@@ -166,6 +171,7 @@ There are two ways to restore the IG501 to factory settings: hardware factory re
   - Step 3: After the ERR light goes out, press and hold the RESET key again, and release the RESET key when the ERR light flashes; wait for the ERR light to go out, indicating that the factory reset was successful.   
    
 - Software factory reset  
+  
   Choose System Management > Configuration Management, click the reset button and select OK. IG501 will complete the factory reset operation by itself.  
 
   ![](images/2020-02-14-20-42-48.png)
