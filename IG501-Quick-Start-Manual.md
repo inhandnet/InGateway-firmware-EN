@@ -31,8 +31,8 @@ This document is used to explain the basic configuration operations of InGateway
 - Step 5: To change the IP address of FE 0/1, choose Network > Network Interfaces > Ethernet page of IG501 to configure FE 0/1.
 ![](images/2020-01-21-10-42-52.png)  
 
-### Set WAN Parameters: Connect IG500 to the Internet
-- Step 1: Insert the SIM card. (Note: Before inserting or removing the SIM card, unplug the power cable; otherwise, the operation may cause data loss or damage the IG500.) After inserting the SIM card, connect the 4G LTE antenna to the ANT interface and power on the IG500.
+### Set WAN Parameters: Connect IG501 to the Internet
+- Step 1: Insert the SIM card. (Note: Before inserting or removing the SIM card, unplug the power cable; otherwise, the operation may cause data loss or damage the IG501.) After inserting the SIM card, connect the 4G LTE antenna to the ANT interface and power on the IG501.
 
   ![](images/2020-01-02-10-10-25.png) <br/>
  &nbsp;
@@ -41,7 +41,7 @@ This document is used to explain the basic configuration operations of InGateway
 ![](images/2020-02-13-14-36-40.png)
 &nbsp;
 
-  When the network connection status is Connected and an IP address has been allocated, the IG500 has been connected to the Internet with the SIM card.  
+  When the network connection status is Connected and an IP address has been allocated, the IG501 has been connected to the Internet with the SIM card.  
 ![](images/2020-02-14-10-21-15.png)
 
 ## Update the Software
