@@ -10,5 +10,5 @@ Welcome to MobiusPi development platform!
    :maxdepth: 2
    :caption: User manual
 
-   IG501 Quick Start Manual.md
-   IG902 Quick Start Manual.md
+   IG501-Quick-Start-Manual.md
+   IG902-Quick-Start-Manual.md
