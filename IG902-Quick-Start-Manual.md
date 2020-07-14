@@ -24,7 +24,7 @@ This document is used to explain the basic configuration operations of InGateway
 - Step 1: Set the PC’s IP address to be on the same subnet with GE 0/2. By default, the IP address of GE 0/2 on IG902 is 192.168.2.1.  
   - Method 1: Enable the PC to obtain an IP address automatically (recommended)  
 
-     ![](images/2020-01-02-09-55-52.png)  
+    ![](images/2020-01-02-09-55-52.png)  
 
   - Method 2: Set a fixed IP address  
   
