@@ -40,9 +40,9 @@
         - [3.3.2.2 DNS](#dns-service)
         - [3.3.2.3 GPS](#gps)
         - [3.3.2.4 Host List](#host-list)
-      - [3.3.3 Static Routing](#static-routing)
-        - [3.3.3.1 Static Routing Status](#static-routing-status)
-        - [3.3.3.2 Static Routing Configuration](#static-routing-configuration)
+      - [3.3.3 Routing](#static-routing)
+        - [3.3.3.1 Routing Status](#static-routing-status)
+        - [3.3.3.2 Static Routing](#static-routing-configuration)
       - [3.3.4 Firewall](#firewall)
         - [3.3.4.1 ACL](#acl)
         - [3.3.4.2 NAT](#nat)
@@ -204,7 +204,7 @@ InHand provides customers with optional accessories based on the characteristics
           </tr>
           <tr>
               <th><div align="center">Power Adapter</div></th>
-              <th><div align="center">1个</div></th>
+              <th><div align="center">1</div></th>
               <th><div align="center">12VDC Power Adapter</div></th>
           </tr>
           <tr>
@@ -342,7 +342,7 @@ Revolve the movable part of the metal SMAJ interface with gentle force until it 
 ![](images/2020-07-13-11-28-00.png)  
 
 Note:  
-- IG900 supports dual antenna: ANT antenna and AUX antenna. The ANT antenna sends and receives data. The AUX antenna only increases the antenna signal strength and cannot be used independently for data transmission.  
+- IG902 supports dual antenna: ANT antenna and AUX antenna. The ANT antenna sends and receives data. The AUX antenna only increases the antenna signal strength and cannot be used independently for data transmission.  
 - Only the ANT antenna is used in normal cases. It is used with the AUX antenna only when signal is poor and signal strength must be improved.
 
 <a id="power-installation"> </a>
@@ -379,7 +379,7 @@ Terminals provide the RS232 and RS485 interface modes. Connect cables to the cor
 
 ![](images/2020-07-13-11-36-38.png)  
 
-Note: This section is only applicable to IG900 with industrial interfaces.
+Note: This section is only applicable to IG902 with industrial interfaces.
 
 <a id="device-configuration-instructions"> </a>
 
@@ -849,23 +849,23 @@ You can view information about hosts connected to the IG902 on the **Host List**
 
 <a id="static-routing"> </a>
 
-#### 3.3.3 Static Routing
+#### 3.3.3 Routing
 
 <a id="static-routing-status"> </a>
 
-##### 3.3.3.1 Static Routing Status
+##### 3.3.3.1 Routing Status
 
-Choose **Network > Static Routing > Status** to display the **Static Routing Status** page. This page displays information about static routes configured on the IG902, as shown in the following figure.
+Choose **Network > Routing > Routing Status** to display the **Routing Status** page. This page displays information about static routes configured on the IG902, as shown in the following figure.
 
 ![](images/2020-06-28-13-32-53.png)
 
 <a id="static-routing-configuration"> </a>
 
-##### 3.3.3.2 Static Routing Configuration
+##### 3.3.3.2 Static Routing
 
-You can configure static routes on the **Static Routing Configure** page. Then, packets sent to a specific destination are forwarded through the specified route. <font color=#FF0000>(Generally, you do not need to configure static routes.)</font> Follow these steps to configure a static route:
+You can configure static routes on the **Static Routing** page. Then, packets sent to a specific destination are forwarded through the specified route. <font color=#FF0000>(Generally, you do not need to configure static routes.)</font> Follow these steps to configure a static route:
 
-1. Choose **Network > Static Routing > Configure** to display the **Static Routing Configure** page.
+1. Choose **Network > Routing > Static Routing** to display the **Static Routing** page.
 2. Click the **Add** icon to add a static route.
 3. Set the parameters. For details about these parameters, see [static routing parameter description.](#static-routing-parameter-description)
 4. Click **OK** to save the configuration, and then click **Submit** to apply the configuration.
@@ -1163,9 +1163,9 @@ The Device Manager developed by InHand Networks allows you to monitor the status
 3. Set the parameters. For details about these parameters, see [device manager parameter description.](#equipment-remote-monitoring-platform-parameter-description)
 4. Click **Submit** to apply the configuration.
 
-The following figure shows the configuration that connects the IG902 to the `iot.inhandcloud.com` (DM) platform.
+The following figure shows the configuration that connects the IG902 to the `iot.inhandnetworks.com` (DM) platform.
 
-![](images/2020-06-28-14-39-55.png)
+![](images/2020-07-29-13-55-58.png)
 
 <a id="equipment-remote-monitoring-platform-parameter-description"> </a>
 
@@ -1175,8 +1175,6 @@ Parameters of the Device Manager are described as follows:
 - Server Address: specifies the server address of the DM platform to be connected.
 - Registered Account: specifies an account registered on the DM platform.
 - Advanced Settings
-  - Site Name: specifies the site name of the IG902 on the DM platform server.
-  - Asset Numbers: specifies the asset number of the IG902 on the DM platform server.
   - Location Type: specifies the source of the location information. Options are Cellular and GPS.
   - LBS Information Upload: specifies the interval for reporting LBS information. The valid value range is 60-86400.
   - Interval: specifies the interval between heartbeat packets exchanged with the DM platform. The valid value range is 30-86400.

@@ -50,3 +50,5 @@ The new IoT edge computing gateway of InHand aims to utilize IoT technologies to
    IG902-Quick-Start-Manual.md
    IG902用户手册-EN.md
    IG902命令行指令说明手册-EN.md
+   InGateway501-User-Manual-EN.md
+   InGateway501-Command-Line-Instructions-EN.md
