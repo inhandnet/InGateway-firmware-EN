@@ -2,10 +2,13 @@
 This document is used to explain the basic configuration operations of InGateway902 (IG902 for short) networking, software version update, etc., so that users can master the basic configuration of IG902 and the use of common functions.
 
   - [1. Configure IG902 Network Parameters](#configure-ig902-network-parameters)
-    - [1.1 Set LAN Parameters: Access the IG902 Through LAN](#set-lan-parameters)
-    - [1.2 Set WAN Parameters: Connect IG902 to the Internet](#set-wan-parameters)
+    - [1.1 Access the IG902](#set-lan-parameters)
+    - [1.2 Connect IG902 to the Internet](#set-wan-parameters)
   - [2. Update the Software](#update-the-software)
-  - [3. Use Python Edge Computing](#use-python-edge-computing)
+    - [2.1 Update the IG902 firmware](#update-the-firmware-software)
+    - [2.2 Upgrade the Python SDK of IG902](#update-the-sdk-software)
+    - [2.3 Upgrade the Docker SDK of IG902](#update-the-docker-software)
+  - [3. Python Edge Computing](#use-python-edge-computing)
     - [3.1 Install and run Python App](#install-and-run-python-app)
     - [3.2 Update Configuration File for App](#update-configuration-file-for-app)
     - [3.3 Update Python App version](#update-python-app-version)
@@ -20,8 +23,9 @@ This document is used to explain the basic configuration operations of InGateway
 
 <a id="set-lan-parameters"> </a>  
 
-### 1.1 Set LAN Parameters: Access the IG902 Through LAN
-- Step 1: Set the PC’s IP address to be on the same subnet with GE 0/2. By default, the IP address of GE 0/2 on IG902 is 192.168.2.1.  
+### 1.1 Access the IG902
+- Step 1: By default, the IP address of GE 0/1 on IG902 is 192.168.1.1; the IP address of GE 0/2 on IG902 is 192.168.2.1. This document uses the GE 0/2 port to access the IG902 as an example. Set the PC’s IP address to be on the same subnet with GE 0/2.   
+    
   - Method 1: Enable the PC to obtain an IP address automatically (recommended)  
 
     ![](images/2020-01-02-09-55-52.png)  
@@ -50,7 +54,7 @@ This document is used to explain the basic configuration operations of InGateway
 
 <a id="set-wan-parameters"> </a>  
 
-### 1.2 Set WAN Parameters: Connect IG902 to the Internet
+### 1.2 Connect IG902 to the Internet
   - Method 1: Connect to the Internet by SIM card
     - Step 1: Insert the SIM card. (Note: Before inserting or removing the SIM card, unplug the power cable; otherwise, the operation may cause data loss or damage the IG902.) After inserting the SIM card, connect the 4G LTE antenna to the ANT interface and power on the IG902.  
 
@@ -86,20 +90,27 @@ This document is used to explain the basic configuration operations of InGateway
 <a id="update-the-software"> </a>  
 
 ## 2. Update the Software
-To obtain the latest software version of IG902 and updated functions, contact the customer service center. To update the IG902 software version, do as follows:  
-- Update the IG902 firmware.  
+To obtain the latest software version of IG902 and updated functions, contact the customer service center. To update the IG902 software version, do as follows.  
+
+<a id="update-the-firmware-software"> </a>  
+
+## 2.1 Update the IG902 firmware.  
   
   Choose System > Firmware Upgrade. Select a firmware file and click Start Upgrading. After the update is completed, you are prompted to restart the system to Apply the new firmware.  
 
   ![](images/2020-01-21-14-20-39.png)  
    
-- Upgrade the Python SDK of IG902.   
+<a id="update-the-sdk-software"> </a>  
+
+## 2.2 Upgrade the Python SDK of IG902.   
   
   Choose Edge Computing > Python Edge Computing. Select Python Engine, select an Python SDK file, and click Upgrade; when the upgrade confirmation window pops up, click Confirm. Then the IG902 automatically performs the upgrade.  
 
   ![](images/2020-02-12-14-09-43.png)  
    
-- Upgrade the Docker SDK of IG902.   
+<a id="update-the-docker-software"> </a>  
+
+## 2.3 Upgrade the Docker SDK of IG902.   
   
   Choose Edge Computing > Docker Manager, close the Docker Manager and import the Docker SDK.   
 
@@ -119,7 +130,7 @@ To obtain the latest software version of IG902 and updated functions, contact th
 
 <a id="use-python-edge-computing"> </a>  
 
-## 3. Use Python Edge Computing
+## 3. Python Edge Computing
 
 <a id="install-and-run-python-app"> </a>  
 

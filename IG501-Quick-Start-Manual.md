@@ -2,10 +2,12 @@
 This document is used to explain the basic configuration operations of InGateway501 (IG501 for short) networking, software version update, etc., so that users can master the basic configuration of IG501 and the use of common functions.
 
   - [1. Configure IG501 Network Parameters](#configure-ig902-network-parameters)
-    - [1.1 Set LAN Parameters: Access the IG501 Through LAN](#set-lan-parameters)
-    - [1.2 Set WAN Parameters: Connect IG501 to the Internet](#set-wan-parameters)
+    - [1.1 Access the IG501](#set-lan-parameters)
+    - [1.2 Connect IG501 to the Internet](#set-wan-parameters)
   - [2. Update the Software](#update-the-software)
-  - [3. Use Python Edge Computing](#use-python-edge-computing)
+    - [2.1 Update the IG501 firmware](#update-the-firmware-software)
+    - [2.2 Upgrade the Python SDK of IG501](#update-the-sdk-software)
+  - [3. Python Edge Computing](#use-python-edge-computing)
     - [3.1 Install and run Python App](#install-and-run-python-app)
     - [3.2 Update Configuration File for App](#update-configuration-file-for-app)
     - [3.3 Update Python App version](#update-python-app-version)
@@ -20,7 +22,7 @@ This document is used to explain the basic configuration operations of InGateway
 
 <a id="set-lan-parameters"> </a>  
 
-### 1.1 Set LAN Parameters: Access the IG501 Through LAN
+### 1.1 Access the IG501
 - Step 1: Set the PC’s IP address to be on the same subnet with FE 0/1. By default, the IP address of FE 0/1 on IG501 is 192.168.1.1.   
   - Method 1: Enable the PC to obtain an IP address automatically (recommended)  
 
@@ -50,7 +52,7 @@ This document is used to explain the basic configuration operations of InGateway
 
 <a id="set-wan-parameters"> </a>  
 
-### 1.2 Set WAN Parameters: Connect IG501 to the Internet
+### 1.2 Connect IG501 to the Internet
 - Step 1: Insert the SIM card. (Note: Before inserting or removing the SIM card, unplug the power cable; otherwise, the operation may cause data loss or damage the IG501.) After inserting the SIM card, connect the 4G LTE antenna to the ANT interface and power on the IG501.  
 
   ![](images/2020-01-02-10-10-25.png)  
@@ -66,14 +68,19 @@ This document is used to explain the basic configuration operations of InGateway
 <a id="update-the-software"> </a>  
 
 ## 2. Update the Software
-To obtain the latest software version of IG501 and updated functions, contact the customer service center. To update the IG501 software version, do as follows:  
-- Update the IG501 firmware.   
+To obtain the latest software version of IG501 and updated functions, contact the customer service center. To update the IG501 software version, do as follows.
+
+<a id="update-the-firmware-software"> </a>  
+
+### 2.1 Update the IG501 firmware.   
   
   Choose System > Firmware Upgrade. Select a firmware file and click Start Upgrading. After the update is completed, you are prompted to restart the system to Apply the new firmware.  
 
   ![](images/2020-01-21-14-20-39.png)  
    
-- Upgrade the Python SDK of IG501.   
+<a id="update-the-sdk-software"> </a>  
+
+### 2.2 Upgrade the Python SDK of IG501.   
   
   Choose Edge Computing > Python Edge Computing. Select Python Engine, select an Python SDK file, and click Upgrade; when the upgrade confirmation window pops up, click Confirm. Then the IG501 automatically performs the upgrade.  
 
@@ -81,7 +88,7 @@ To obtain the latest software version of IG501 and updated functions, contact th
 
 <a id="use-python-edge-computing"> </a>  
 
-## 3. Use Python Edge Computing
+## 3. Python Edge Computing
 
 <a id="install-and-run-python-app"> </a>  
 
