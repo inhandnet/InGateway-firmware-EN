@@ -44,11 +44,18 @@ The new IoT edge computing gateway of InHand aims to utilize IoT technologies to
 
 .. toctree::
    :maxdepth: 2
-   :caption: User manual
+   :caption: IG902 User manual
 
-   IG501-Quick-Start-Manual.md
+
    IG902-Quick-Start-Manual.md
    IG902用户手册-EN.md
    IG902命令行指令说明手册-EN.md
+
+
+.. toctree::
+   :maxdepth: 2
+   :caption: IG501 User manual
+
+   IG501-Quick-Start-Manual.md
    InGateway501-User-Manual-EN.md
    InGateway501-Command-Line-Instructions-EN.md
