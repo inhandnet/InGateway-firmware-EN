@@ -186,7 +186,7 @@ After the update is completed, as shown below：
 <a id="enable-the-debug-mode"> </a>  
 
 ### 3.4 Enable the Debug Mode
-To run and debug Python code on IG902, you need to enable IG902's debug mode.  Choose Edge Computing > Python Edge Computing, select Enable Debug Mode. After enabling, you can develop IG902 through VS Code. How to use VS Code for Python development of IG902, please refer to [Quick Start for MobiusPi Python Development](http://sdk.ig.inhandnetworks.com/en/latest/MobiusPi%20Python%20QuickStart-EN.html).  
+To run and debug Python code on IG902, you need to enable IG902's debug mode.  Choose Edge Computing > Python Edge Computing, select Enable Debug Mode. After enabling, you can develop IG902 through VS Code. How to use VS Code for Python development of IG902, please refer to [Quick Start for MobiusPi Python Development](http://sdk.ig.inhandnetworks.com/en/latest/MobiusPi-Python-QuickStart-EN.html).  
 
 ![](images/2020-02-12-15-04-41.png)  
 
