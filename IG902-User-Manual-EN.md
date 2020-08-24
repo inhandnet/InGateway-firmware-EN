@@ -999,7 +999,7 @@ Follow these steps to configure the Python secondary development environment:
 1. Choose **Edge Computing > **Python Edge Computing**** to display the **Python Edge Computing** page.
 2. Enable the Python edge computing engine.
 3. Install or upgrade the Python SDK <font color=#FF0000>(optional)</font>.
-4. Enable the debugging mode. For details about Python secondary development, see [Python Development Quick Start](http://sdk.ig.inhandnetworks.com/en/latest/MobiusPi%20Python%20QuickStart-EN.html).
+4. Enable the debugging mode. For details about Python secondary development, see [Python Development Quick Start](http://sdk.ig.inhandnetworks.com/en/latest/MobiusPi-Python-QuickStart-EN.html).
 
 Follow these steps to configure a Python app:
 
