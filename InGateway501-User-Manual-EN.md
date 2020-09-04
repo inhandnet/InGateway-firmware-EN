@@ -1002,8 +1002,8 @@ You can click the globe icon in the upper right corner to change the language of
 
 Follow these steps:
 
-1. Find the RESET key on the operation panel.
-2. Hold down the RESET key within 10s after the device is powered on.
-3. When the WARN indicator turns red, release the RESET key.
-4. When the WARN indicator turns off, hold down the RESET key for 1s and release it.
-5. When you see the WARN indicator blink three times and turn off, the factory settings of the device have been restored.
+1. Find the RESET button on the operation panel.
+2. Hold down the RESET button within 10s after the device is powered on.
+3. When the WARN indicator turns red, release the RESET button.
+4. After a few seconds, when the WARN indicator turns off, hold down the RESET button again.
+5. When you see the WARN indicator blink, release the RESET button. After a while, the WARN indicator turns off, the factory settings of the device have been restored.
