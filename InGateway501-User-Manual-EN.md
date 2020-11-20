@@ -834,7 +834,7 @@ The Device Manager developed by InHand Networks allows you to monitor the status
 
 The following figure shows the configuration that connects the IG501 to the `iot.inhandnetworks.com` (DM) platform.
 
-![](images/2020-07-29-13-55-58.png)
+![](images/2020-11-20-20-09-12.png)
 
 <a id="equipment-remote-monitoring-platform-parameter-description"> </a>
 
@@ -844,11 +844,9 @@ Parameters of the Device Manager are described as follows:
 - Server Address: specifies the server address of the DM platform to be connected.
 - Registered Account: specifies an account registered on the DM platform.
 - Advanced Settings
-  - Site Name: specifies the site name of the IG501 on the DM platform server.
-  - Asset Numbers: specifies the asset number of the IG501 on the DM platform server.
-  - Location Type: specifies the source of the location information. Options are Cellular and GPS.
-  - LBS Information Upload: specifies the interval for reporting LBS information. The valid value range is 60-86400.
-  - Interval: specifies the interval between heartbeat packets exchanged with the DM platform. The valid value range is 30-86400.
+  - Enable Secure Channel: enables or disables secure channel.
+  - LBS Upload Interval: specifies the interval for reporting LBS information. The valid value range is 60-86400.
+  - Heartbeat Interval: specifies the interval between heartbeat packets exchanged with the DM platform. The valid value range is 30-86400.
   - Dataflow Upload Interval: specifies the interval for reporting traffic information. The valid value range is 3600-86400.
 
 <a id="firmware-upgrade"> </a>
@@ -1000,10 +998,16 @@ You can click the globe icon in the upper right corner to change the language of
 
 ### 5.1 How Do I Restore Factory Settings Through Hardware?
 
-Follow these steps:
+There are two ways to restore the IG501 to factory settings: hardware factory reset and software factory reset.  
+- Hardware factory reset  
+  - Step 1: Find the RESET button on the operation panel;  
+  - Step 2: Hold down the RESET button within 10s after the device is powered on;  
+  - Step 3: When the WARN indicator turns yellow, release the RESET button;
+  - Step 4: After a few seconds, when the WARN indicator turns off, hold down the RESET button again;
+  - Step 5: When you see the WARN indicator blink, release the RESET button. After a while, the WARN indicator turns off, the factory settings of the device have been restored.   
 
-1. Find the RESET button on the operation panel.
-2. Hold down the RESET button within 10s after the device is powered on.
-3. When the WARN indicator turns red, release the RESET button.
-4. After a few seconds, when the WARN indicator turns off, hold down the RESET button again.
-5. When you see the WARN indicator blink, release the RESET button. After a while, the WARN indicator turns off, the factory settings of the device have been restored.
+- Software factory reset  
+  
+  Choose System Management > Configuration Management, click the reset button and select OK. IG501 will complete the factory reset operation by itself.  
+
+  ![](images/2020-02-14-20-42-48.png)
