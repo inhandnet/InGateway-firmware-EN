@@ -173,10 +173,12 @@ After the IG501 is successfully connected to the Device Manager, the status is d
 ### Factory reset
 There are two ways to restore the IG501 to factory settings: hardware factory reset and software factory reset.  
 - Hardware factory reset  
-  - Step 1: After the device is powered on and the ERR light is off, press and hold the RESET key;  
-  - Step 2: When the ERR light is always on, release the RESET key;  
-  - Step 3: After the ERR light goes out, press and hold the RESET key again, and release the RESET key when the ERR light flashes; wait for the ERR light to go out, indicating that the factory reset was successful.   
-   
+  - Step 1: Find the RESET button on the operation panel;  
+  - Step 2: Hold down the RESET button within 10s after the device is powered on;  
+  - Step 3: When the WARN indicator turns yellow, release the RESET button;
+  - Step 4: After a few seconds, when the WARN indicator turns off, hold down the RESET button again;
+  - Step 5: When you see the WARN indicator blink, release the RESET button. After a while, the WARN indicator turns off, the factory settings of the device have been restored.   
+
 - Software factory reset  
   
   Choose System Management > Configuration Management, click the reset button and select OK. IG501 will complete the factory reset operation by itself.  
