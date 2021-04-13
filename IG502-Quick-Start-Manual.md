@@ -224,34 +224,45 @@ After the IG502 is successfully connected to the InHand Device Manager, the stat
 ## 6. I/O Module
 IG502 supports the digital input, pulse counting, digital output, and pulse output functions. In addition, IG502 can remotely read I/O status data or report it to the cloud platform through Modbus TCP. I/O in each mode is defined as follows:
 - Digital input (Dry contacts and wet contacts are specified based on actual connections.)
-  - Dry contacts
-    0: disconnected
-    1: connected
+  - Dry contacts  
+
+    0: disconnected  
+
+    1: connected  
+
     The following figure shows the connection modes.  
 
     ![](images/2021-04-13-18-45-55.png)  
 
-  - Wet contacts
-    0: 0 V DC to 3 V DC/-3 V DC to 0 V DC
-    1: 10 V DC to 30 V DC/-30 V DC to -10 V DC (4 mA min)
+  - Wet contacts  
+
+    0: 0 V DC to 3 V DC/-3 V DC to 0 V DC  
+
+    1: 10 V DC to 30 V DC/-30 V DC to -10 V DC (4 mA min)  
+
     The following figure shows the connection modes.  
 
     ![](images/2021-04-13-18-46-39.png)  
 
-- Pulse counting
+- Pulse counting  
+
   A maximum of 3000 Hz pulse signal counting is supported, up to 4294967296.
   The following figure shows the connection modes.  
 
   ![](images/2021-04-13-19-20-48.png)
 
-- Digital output
-  0: OFF
-  1: ON. According to the external power output voltage, if no external power supply is connected, no voltage is output. The maximum voltage output is 30 V, 500 mA.
+- Digital output  
+
+  0: OFF  
+
+  1: ON. According to the external power output voltage, if no external power supply is connected, no voltage is output. The maximum voltage output is 30 V, 500 mA.  
+
   The following figure shows the connection modes.  
 
   ![](images/2021-04-13-19-21-50.png)  
 
-- Pulse output
+- Pulse output  
+
   A maximum of 5000 Hz pulse signal output is supported.
   The following figure shows the connection modes.  
 
