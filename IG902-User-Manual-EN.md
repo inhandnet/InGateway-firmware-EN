@@ -2097,7 +2097,7 @@ The serial port parameters are described as follows:
 Caution:
 
 - Serial port settings on the IG902 must be the same as those on the terminals connected to it.
-- DTU and GPS IP forwarding cannot be enabled at the same time.
+- DTU and GPS serial forwarding cannot be enabled at the same time.
 
 <a id="dtu1"> </a>
 
