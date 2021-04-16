@@ -212,7 +212,7 @@ After the IG902 is successfully connected to the Device Manager, the status is d
 
 ![](images/2020-03-19-16-27-08.png)  
 
-<a id="io-module"> </a>  
+<a id="io"> </a>  
 
 ## 5. I/O Module
 <font color=#FF0000>Note: The following information is only for the IG902 with IO module shown in the figure below  </font>  
