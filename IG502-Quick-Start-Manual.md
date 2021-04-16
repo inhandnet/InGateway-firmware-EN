@@ -14,6 +14,7 @@ This document is used to explain the basic configuration operations of InGateway
     - [3.4 Enable the Debug Mode](#enable-the-debug-mode)
   - [4. InHand Cloud](#inhand-cloud)
   - [5. Data Collection And Upload To The Cloud](#data-collection-and-upload-to-the-cloud)
+  - [6. I/O Module](#io)
   - [Appendix](#appendix)
     - [Factory reset](#factory-reset)
 
@@ -220,6 +221,8 @@ After the IG502 is successfully connected to the InHand Device Manager, the stat
   ![](images/2020-09-30-15-51-28.png)  
 
   ![](images/2020-06-22-11-59-03.png)
+
+<a id="io"> </a> 
 
 ## 6. I/O Module
 IG502 supports the digital input, pulse counting, digital output, and pulse output functions. In addition, IG502 can remotely read I/O status data or report it to the cloud platform through Modbus TCP. I/O in each mode is defined as follows:
