@@ -14,6 +14,7 @@ This document is used to explain the basic configuration operations of InGateway
     - [3.3 Update Python App version](#update-python-app-version)
     - [3.4 Enable the Debug Mode](#enable-the-debug-mode)
   - [4. Device Manager](#device-manager)
+  - [5. I/O Module](#io)
   - [Appendix](#appendix)
     - [Factory reset](#factory-reset)
 
@@ -210,6 +211,113 @@ Choose System Management > Device Manager, tick Enable Device Manager and config
 After the IG902 is successfully connected to the Device Manager, the status is described as Connection Accepted.  
 
 ![](images/2020-03-19-16-27-08.png)  
+
+<a id="io-module"> </a>  
+
+## 5. I/O Module
+<font color=#FF0000>Note: The following information is only for the IG902 with IO module shown in the figure below  </font>  
+
+![](images/2021-04-16-20-02-42.png) 
+
+IG902 supports the digital input, pulse counting, digital output, and pulse output functions. In addition, IG902 can remotely read I/O status data or report it to the cloud platform through Modbus TCP. I/O in each mode is defined as follows:
+- Digital input (Dry contacts and wet contacts are specified based on actual connections.)
+  - Dry contacts  
+
+    0: disconnected  
+
+    1: connected  
+
+    The following figure shows the connection modes.  
+
+    ![](images/2021-04-13-18-45-55.png)  
+
+  - Wet contacts  
+
+    0: 0 V DC to 3 V DC/-3 V DC to 0 V DC  
+
+    1: 10 V DC to 30 V DC/-30 V DC to -10 V DC (4 mA min)  
+
+    The following figure shows the connection modes.  
+
+    ![](images/2021-04-13-18-46-39.png)  
+
+- Pulse counting  
+
+  A maximum of 3000 Hz pulse signal counting is supported, up to 4294967296.
+  The following figure shows the connection modes.  
+
+  ![](images/2021-04-13-19-20-48.png)
+
+- Digital output  
+
+  0: OFF  
+
+  1: ON. According to the external power output voltage, if no external power supply is connected, no voltage is output. The maximum voltage output is 30 V, 500 mA.  
+
+  The following figure shows the connection modes.  
+
+  ![](images/2021-04-13-19-21-50.png)  
+
+- Pulse output  
+
+  A maximum of 5000 Hz pulse signal output is supported.
+  The following figure shows the connection modes.  
+
+  ![](images/2021-04-13-19-21-50.png)  
+
+The procedure for configuring I/O and obtaining I/O status data is as follows:  
+- Step 1: Choose "Edge Computing > IO Module > Configuration", and configure the I/O functions based on the site requirements. The following figures show a configuration example.  
+  - Digital input  
+
+    ![](images/2021-04-08-19-28-07.png)
+
+  - Pulse counting  
+
+    The starting value is 0. After power down, the value counted by the power down is retained.  
+
+    ![](images/2021-04-08-19-28-41.png)
+
+  - Digital output  
+
+    ![](images/2021-04-08-19-29-13.png)
+
+  - Pulse output
+
+    According to the frequency of 5000 Hz, the duty cycle is 50% for the pulse output.  
+
+    ![](images/2021-04-08-19-29-36.png)  
+
+- Step 2 (optional): Set the pulse counting and pulse output.
+  
+  After setting DI to the pulse counting, click Start to count the pulses received by the DI. Otherwise, do not count it. Click Reset to reset the count value to the starting value.  
+
+  ![](images/2021-04-08-19-30-48.png)  
+
+  After setting DO to the pulse counting, click Start to output pulses based on the specified output frequency. Otherwise, do not output pulses.  
+
+  ![](images/2021-04-08-19-30-25.png)
+
+- Step 3: Set Modbus TCP Slave.  
+
+  Turn on the **Enable** switch to enable the Modbus TCP Slave function. This function allows Modbus TCP Master to read the I/O status of IG902. After you turn on the **External Access** switch, Modbus TCP Master outside the gateway can read the I/O status of IG902, such as the SCADA software. Set other parameters based on the site requirements. The following figure shows a configuration example.  
+
+  ![](images/2021-04-08-19-31-48.png)  
+
+- Step 4: Read the I/O status through Modbus TCP.  
+
+  Use Device Supervisor to read the I/O status of IG902 in Step 3 as an example. First, add a Modbus TCP controller and set the controller communication parameters based on Modbus TCP Slave.  
+
+  ![](images/2021-04-08-19-32-32.png)  
+
+  Then, configure the data to be collected according to the Modbus mapping table. For example, read **DI0 Counter Value** as an example.  
+
+  ![](images/2021-04-08-19-33-11.png)  
+
+  ![](images/2021-04-08-19-33-57.png)  
+
+  After the configuration is completed, you can obtain **DI0 Counter Value**.  
+
+  ![](images/2021-04-13-19-50-04.png)
 
 ## Appendix
 ### Factory reset
