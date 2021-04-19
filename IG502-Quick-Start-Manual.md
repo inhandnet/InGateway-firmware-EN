@@ -307,7 +307,7 @@ The procedure for configuring I/O and obtaining I/O status data is as follows:
 
   Turn on the **Enable** switch to enable the Modbus TCP Slave function. This function allows Modbus TCP Master to read the I/O status of IG502. After you turn on the **External Access** switch, Modbus TCP Master outside the gateway can read the I/O status of IG502, such as the SCADA software. Set other parameters based on the site requirements. The following figure shows a configuration example.  
 
-  ![](images/2021-04-08-19-31-48.png)  
+  ![](images/2021-04-19-11-47-41.png)  
 
 - Step 4: Read the I/O status through Modbus TCP.  
 
