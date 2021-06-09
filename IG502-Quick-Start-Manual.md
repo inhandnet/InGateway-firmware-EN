@@ -256,9 +256,9 @@ IG502 supports the digital input, pulse counting, digital output, and pulse outp
 
 - Digital output  
 
-  0: OFF  
+  0: Low level  
 
-  1: ON. According to the external power output voltage, if no external power supply is connected, no voltage is output. The maximum voltage output is 30 V, 500 mA.  
+  1: High level. According to the external power output voltage, if no external power supply is connected, no voltage is output. The maximum voltage output is 30 V, 500 mA.  
 
   The following figure shows the connection modes.  
 
