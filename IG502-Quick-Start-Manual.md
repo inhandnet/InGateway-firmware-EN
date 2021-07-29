@@ -91,7 +91,7 @@ This document is used to explain the basic configuration operations of InGateway
 <a id="update-the-software"> </a>  
 
 ## 2. Update the Software
-To obtain the latest software version of IG502 and updated functions, contact the customer service center. To update the IG502 software version, do as follows.  
+To obtain the latest software version of IG502 and updated functions, please visit the [Resource](https://www.inhandnetworks.com/downlist/cid-148/). To update the IG502 software version, do as follows.  
 
 <a id="update-the-firmware-software"> </a>  
 
