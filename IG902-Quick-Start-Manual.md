@@ -323,7 +323,7 @@ The procedure for configuring I/O and obtaining I/O status data is as follows:
 ### Factory reset
 There are two ways to restore the IG902 to factory settings: hardware factory reset and software factory reset.
 - Hardware factory reset  
-  - Step 1: After the device is powered on and the ERR light is off, press and hold the RESET key;  
+  - Step 1: Hold down the RESET button within 10s after the device is powered on;  
   - Step 2: When the ERR light is always on, release the RESET key;  
   - Step 3: After the ERR light goes out, press and hold the RESET key again, and release the RESET key when the ERR light flashes; wait for the ERR light to go out, indicating that the factory reset was successful.  
    
